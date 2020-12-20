@@ -1,0 +1,30 @@
+package poly.kansai.ex;
+
+public class Rectangle implements IFigure {　//インターフェイスの実装 implements インターフェイスクラス名
+    private int width;　//フィード名
+　　private int height;　//フィールド名
+
+    Rectangle(int width, int height) {　//コンストラクタは、幅、および高さを引数で与える形のみ持つ
+        this.width = width;
+        this.height = height;
+    }
+
+    @Override
+    public int getWidth() {　　// オーバーライド
+        // TODO 自動生成されたメソッド・スタブ
+        return width;　　// returnで幅を戻す
+    }
+
+    @Override
+    public int getHeight() {
+        // TODO 自動生成されたメソッド・スタブ
+        return height;　// returnで高さを戻す
+    }
+
+    @Override
+    public double getArea() {
+        // TODO 自動生成されたメソッド・スタブ
+        return (double) (width * height);　// 長方形の面積
+    }
+
+}
